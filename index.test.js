@@ -2,6 +2,7 @@
 //const process = require('process');
 //const cp = require('child_process');
 //const path = require('path');
+const { run }= require('./index')
 
 /*
 test('throws invalid number', async () => {
@@ -23,3 +24,6 @@ test('test runs', () => {
   console.log(cp.execSync(`node ${ip}`, {env: process.env}).toString());
 })
 */
+test('run all', ()=>{
+  run()
+})

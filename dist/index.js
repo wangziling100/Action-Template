@@ -50,7 +50,7 @@ require('./sourcemap-register.js');module.exports =
 /******/ ({
 
 /***/ 104:
-/***/ (function() {
+/***/ (function(module) {
 
 //const core = require('@actions/core');
 //const wait = require('./wait');
@@ -62,7 +62,9 @@ async function run() {
 }
 
 run();
-
+module.exports = {
+  run: run,
+}
 
 /***/ })
 
